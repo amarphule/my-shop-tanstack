@@ -18,11 +18,10 @@ const CustomerTable = () => {
   });
 
   const customerTableColumn = useMemo(() => columns, []);
-  const customerData = useMemo(() => data, [data]);
 
   const tableInstance = useReactTable({
     columns: customerTableColumn,
-    data: customerData,
+    data,
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
   });
