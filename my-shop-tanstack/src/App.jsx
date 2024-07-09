@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link, Outlet } from "react-router-dom";
-import CustomerTable from "./components/CustomerTable";
+import CustomerTable from "./components/CustomerTable/CustomerTable";
 
 function App() {
   return (
