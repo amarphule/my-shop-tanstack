@@ -24,12 +24,12 @@ const Actions = ({ customerId }) => {
   };
 
   return (
-    <div className="flex gap-5">
+    <div className="flex gap-5 justify-center">
       <button onClick={() => navigate(`/customers/edit/${id}`)}>
-        <MdOutlineModeEdit />
+        <MdOutlineModeEdit className="text-orange-300" />
       </button>
       <button onClick={handleDeleteClick}>
-        <MdOutlineDeleteForever />
+        <MdOutlineDeleteForever className="text-red-500" />
       </button>
     </div>
   );

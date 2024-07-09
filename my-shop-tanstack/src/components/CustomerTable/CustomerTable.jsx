@@ -80,22 +80,38 @@ const CustomerTable = () => {
       <hr />
       <div className="flex justify-center items-center gap-2">
         <button
-          className="border rounded p-1"
+          className={`border rounded p-1 ${
+            !tableInstance.getCanPreviousPage()
+              ? "bg-gray-300 text-gray-600 cursor-not-allowed"
+              : ""
+          }`}
           onClick={() => tableInstance.firstPage()}
           disabled={!tableInstance.getCanPreviousPage()}
         >{`<< First`}</button>
         <button
-          className="border rounded p-1"
+          className={`border rounded p-1 ${
+            !tableInstance.getCanPreviousPage()
+              ? "bg-gray-300 text-gray-600 cursor-not-allowed"
+              : ""
+          }`}
           onClick={() => tableInstance.previousPage()}
           disabled={!tableInstance.getCanPreviousPage()}
-        >{`< pre`}</button>
+        >{`< Prev`}</button>
         <button
-          className="border rounded p-1"
+          className={`border rounded p-1 ${
+            !tableInstance.getCanNextPage()
+              ? "bg-gray-300 text-gray-600 cursor-not-allowed"
+              : ""
+          }`}
           onClick={() => tableInstance.nextPage()}
           disabled={!tableInstance.getCanNextPage()}
-        >{`next >`}</button>
+        >{`Next >`}</button>
         <button
-          className="border rounded p-1"
+          className={`border rounded p-1 ${
+            !tableInstance.getCanNextPage()
+              ? "bg-gray-300 text-gray-600 cursor-not-allowed"
+              : ""
+          }`}
           onClick={() => tableInstance.lastPage()}
           disabled={!tableInstance.getCanNextPage()}
         >{`Last >>`}</button>

@@ -1,7 +1,7 @@
 {
   "customers": [
     {
-      "name": "Dierdre",
+      "name": "Dierdre deo",
       "noOfPurchase": "67",
       "amount": 23,
       "id": "1"
@@ -61,10 +61,10 @@
       "amount": 81
     },
     {
-      "id": "11",
       "name": "Gayelord",
-      "noOfPurchase": 41,
-      "amount": 11
+      "noOfPurchase": "4121",
+      "amount": 11,
+      "id": "11"
     },
     {
       "id": "12",
@@ -293,6 +293,12 @@
       "name": "Ketty",
       "noOfPurchase": 39,
       "amount": 95
+    },
+    {
+      "id": "50",
+      "name": "amarphule",
+      "noOfPurchase": "121",
+      "amount": "21212"
     }
   ]
 }
