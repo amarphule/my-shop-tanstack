@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
+import CustomerTable from "./components/CustomerTable";
 
 function App() {
   return (
@@ -18,6 +19,14 @@ function App() {
           Add Customer
         </Link>
       </div>
+      <section className="md:flex w-full space-y-4 md:space-y-0">
+        <aside className="md:w-1/2 w-full p-4 text-center flex flex-col border-r-2 space-y-3">
+          <CustomerTable />
+        </aside>
+        <aside className="md:w-1/2 w-full p-4">
+          <Outlet />
+        </aside>
+      </section>
     </>
   );
 }
