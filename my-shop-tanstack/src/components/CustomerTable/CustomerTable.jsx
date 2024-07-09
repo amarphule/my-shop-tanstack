@@ -4,6 +4,7 @@ import {
   useReactTable,
   getCoreRowModel,
   flexRender,
+  getPaginationRowModel,
 } from "@tanstack/react-table";
 import { columns } from "./columns.jsx";
 import { useMemo } from "react";
@@ -12,6 +13,8 @@ const CustomerTable = () => {
   const { isLoading, data, error } = useQuery({
     queryKey: ["customers"],
     queryFn: fetchCustomers,
+    // Ensure initial data is always an array to avoid undefined issues
+    initialData: [],
   });
 
   const customerTableColumn = useMemo(() => columns, []);
@@ -21,6 +24,7 @@ const CustomerTable = () => {
     columns: customerTableColumn,
     data: customerData,
     getCoreRowModel: getCoreRowModel(),
+    getPaginationRowModel: getPaginationRowModel(),
   });
 
   return (
@@ -74,6 +78,36 @@ const CustomerTable = () => {
           </tbody>
         </table>
       )}
+      <hr />
+      <div className="flex justify-center items-center gap-2">
+        <button
+          className="border rounded p-1"
+          onClick={() => tableInstance.firstPage()}
+          disabled={!tableInstance.getCanPreviousPage()}
+        >{`<< First`}</button>
+        <button
+          className="border rounded p-1"
+          onClick={() => tableInstance.previousPage()}
+          disabled={!tableInstance.getCanPreviousPage()}
+        >{`< pre`}</button>
+        <button
+          className="border rounded p-1"
+          onClick={() => tableInstance.nextPage()}
+          disabled={!tableInstance.getCanNextPage()}
+        >{`next >`}</button>
+        <button
+          className="border rounded p-1"
+          onClick={() => tableInstance.lastPage()}
+          disabled={!tableInstance.getCanNextPage()}
+        >{`Last >>`}</button>
+        <span className="flex items-center gap-1">
+          <div>Page</div>
+          <strong>
+            {tableInstance.getState().pagination.pageIndex + 1} of{" "}
+            {tableInstance.getPageCount().toLocaleString()}
+          </strong>
+        </span>
+      </div>
     </>
   );
 };
