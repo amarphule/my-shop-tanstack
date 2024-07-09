@@ -13,8 +13,18 @@ const fetchCustomerDetails = async (id) => {
   if (!response.ok) {
     throw new Error("Failed to fetch customer");
   }
-  console.log(" det ", response);
   return await response.json();
 };
 
-export { fetchCustomers, fetchCustomerDetails };
+const addCustomer = async (customer) => {
+  const response = await fetch("http://localhost:3000/customers", {
+    method: "POST",
+    headers: {
+      "Content-Type": "Application/json",
+    },
+    body: JSON.stringify(customer),
+  });
+  return response.json();
+};
+
+export { fetchCustomers, fetchCustomerDetails, addCustomer };

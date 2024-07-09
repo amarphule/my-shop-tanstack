@@ -1,253 +1,316 @@
 {
-  "customers": [{
-    "id": 1,
-    "name": "Candide",
-    "noOfPurchase": 19,
-    "amount": 2796
-  }, {
-    "id": 2,
-    "name": "Haze",
-    "noOfPurchase": 89,
-    "amount": 4349
-  }, {
-    "id": 3,
-    "name": "William",
-    "noOfPurchase": 44,
-    "amount": 1635
-  }, {
-    "id": 4,
-    "name": "Rozella",
-    "noOfPurchase": 94,
-    "amount": 2106
-  }, {
-    "id": 5,
-    "name": "Casey",
-    "noOfPurchase": 41,
-    "amount": 2009
-  }, {
-    "id": 6,
-    "name": "Marlyn",
-    "noOfPurchase": 0,
-    "amount": 3933
-  }, {
-    "id": 7,
-    "name": "Mahala",
-    "noOfPurchase": 69,
-    "amount": 3569
-  }, {
-    "id": 8,
-    "name": "Josi",
-    "noOfPurchase": 7,
-    "amount": 2183
-  }, {
-    "id": 9,
-    "name": "Paulita",
-    "noOfPurchase": 64,
-    "amount": 472
-  }, {
-    "id": 10,
-    "name": "Timmy",
-    "noOfPurchase": 23,
-    "amount": 4837
-  }, {
-    "id": 11,
-    "name": "Cornelle",
-    "noOfPurchase": 17,
-    "amount": 680
-  }, {
-    "id": 12,
-    "name": "Olivero",
-    "noOfPurchase": 48,
-    "amount": 4643
-  }, {
-    "id": 13,
-    "name": "Joleen",
-    "noOfPurchase": 78,
-    "amount": 1717
-  }, {
-    "id": 14,
-    "name": "Alan",
-    "noOfPurchase": 33,
-    "amount": 3665
-  }, {
-    "id": 15,
-    "name": "Angelo",
-    "noOfPurchase": 22,
-    "amount": 1391
-  }, {
-    "id": 16,
-    "name": "Brnaba",
-    "noOfPurchase": 46,
-    "amount": 2516
-  }, {
-    "id": 17,
-    "name": "Kizzie",
-    "noOfPurchase": 53,
-    "amount": 4648
-  }, {
-    "id": 18,
-    "name": "Shelagh",
-    "noOfPurchase": 58,
-    "amount": 2336
-  }, {
-    "id": 19,
-    "name": "Happy",
-    "noOfPurchase": 2,
-    "amount": 582
-  }, {
-    "id": 20,
-    "name": "Ernestine",
-    "noOfPurchase": 45,
-    "amount": 2915
-  }, {
-    "id": 21,
-    "name": "Bridgette",
-    "noOfPurchase": 69,
-    "amount": 2050
-  }, {
-    "id": 22,
-    "name": "Ellie",
-    "noOfPurchase": 28,
-    "amount": 4112
-  }, {
-    "id": 23,
-    "name": "Keely",
-    "noOfPurchase": 53,
-    "amount": 2392
-  }, {
-    "id": 24,
-    "name": "Etty",
-    "noOfPurchase": 4,
-    "amount": 1840
-  }, {
-    "id": 25,
-    "name": "Lennie",
-    "noOfPurchase": 97,
-    "amount": 2405
-  }, {
-    "id": 26,
-    "name": "Victoir",
-    "noOfPurchase": 27,
-    "amount": 4476
-  }, {
-    "id": 27,
-    "name": "Bertie",
-    "noOfPurchase": 32,
-    "amount": 630
-  }, {
-    "id": 28,
-    "name": "Claire",
-    "noOfPurchase": 67,
-    "amount": 2612
-  }, {
-    "id": 29,
-    "name": "Farah",
-    "noOfPurchase": 9,
-    "amount": 389
-  }, {
-    "id": 30,
-    "name": "Minda",
-    "noOfPurchase": 17,
-    "amount": 2457
-  }, {
-    "id": 31,
-    "name": "Ogdan",
-    "noOfPurchase": 25,
-    "amount": 2904
-  }, {
-    "id": 32,
-    "name": "Mollie",
-    "noOfPurchase": 6,
-    "amount": 1207
-  }, {
-    "id": 33,
-    "name": "Nettie",
-    "noOfPurchase": 31,
-    "amount": 4318
-  }, {
-    "id": 34,
-    "name": "Risa",
-    "noOfPurchase": 61,
-    "amount": 4954
-  }, {
-    "id": 35,
-    "name": "Farr",
-    "noOfPurchase": 73,
-    "amount": 3302
-  }, {
-    "id": 36,
-    "name": "Budd",
-    "noOfPurchase": 9,
-    "amount": 4722
-  }, {
-    "id": 37,
-    "name": "Gustie",
-    "noOfPurchase": 5,
-    "amount": 2746
-  }, {
-    "id": 38,
-    "name": "Brucie",
-    "noOfPurchase": 8,
-    "amount": 1110
-  }, {
-    "id": 39,
-    "name": "Maighdiln",
-    "noOfPurchase": 66,
-    "amount": 4574
-  }, {
-    "id": 40,
-    "name": "Ashbey",
-    "noOfPurchase": 90,
-    "amount": 220
-  }, {
-    "id": 41,
-    "name": "Noll",
-    "noOfPurchase": 53,
-    "amount": 1112
-  }, {
-    "id": 42,
-    "name": "Tildy",
-    "noOfPurchase": 76,
-    "amount": 986
-  }, {
-    "id": 43,
-    "name": "Annamaria",
-    "noOfPurchase": 11,
-    "amount": 1489
-  }, {
-    "id": 44,
-    "name": "Howie",
-    "noOfPurchase": 11,
-    "amount": 3550
-  }, {
-    "id": 45,
-    "name": "Natalina",
-    "noOfPurchase": 56,
-    "amount": 4873
-  }, {
-    "id": 46,
-    "name": "Bernardine",
-    "noOfPurchase": 28,
-    "amount": 62
-  }, {
-    "id": 47,
-    "name": "Renard",
-    "noOfPurchase": 32,
-    "amount": 1980
-  }, {
-    "id": 48,
-    "name": "Gussy",
-    "noOfPurchase": 84,
-    "amount": 2210
-  }, {
-    "id": 49,
-    "name": "Jone",
-    "noOfPurchase": 29,
-    "amount": 482
-  }, {
-    "id": 50,
-    "name": "Annmaria",
-    "noOfPurchase": 9,
-    "amount": 4458
-  }]
+  "customers": [
+    {
+      "id": "1",
+      "name": "Candide",
+      "noOfPurchase": 19,
+      "amount": 2796
+    },
+    {
+      "id": "2",
+      "name": "Haze",
+      "noOfPurchase": 89,
+      "amount": 4349
+    },
+    {
+      "id": "3",
+      "name": "William",
+      "noOfPurchase": 44,
+      "amount": 1635
+    },
+    {
+      "id": "4",
+      "name": "Rozella",
+      "noOfPurchase": 94,
+      "amount": 2106
+    },
+    {
+      "id": "5",
+      "name": "Casey",
+      "noOfPurchase": 41,
+      "amount": 2009
+    },
+    {
+      "id": "6",
+      "name": "Marlyn",
+      "noOfPurchase": 0,
+      "amount": 3933
+    },
+    {
+      "id": "7",
+      "name": "Mahala",
+      "noOfPurchase": 69,
+      "amount": 3569
+    },
+    {
+      "id": "8",
+      "name": "Josi",
+      "noOfPurchase": 7,
+      "amount": 2183
+    },
+    {
+      "id": "9",
+      "name": "Paulita",
+      "noOfPurchase": 64,
+      "amount": 472
+    },
+    {
+      "id": "10",
+      "name": "Timmy",
+      "noOfPurchase": 23,
+      "amount": 4837
+    },
+    {
+      "id": "11",
+      "name": "Cornelle",
+      "noOfPurchase": 17,
+      "amount": 680
+    },
+    {
+      "id": "12",
+      "name": "Olivero",
+      "noOfPurchase": 48,
+      "amount": 4643
+    },
+    {
+      "id": "13",
+      "name": "Joleen",
+      "noOfPurchase": 78,
+      "amount": 1717
+    },
+    {
+      "id": "14",
+      "name": "Alan",
+      "noOfPurchase": 33,
+      "amount": 3665
+    },
+    {
+      "id": "15",
+      "name": "Angelo",
+      "noOfPurchase": 22,
+      "amount": 1391
+    },
+    {
+      "id": "16",
+      "name": "Brnaba",
+      "noOfPurchase": 46,
+      "amount": 2516
+    },
+    {
+      "id": "17",
+      "name": "Kizzie",
+      "noOfPurchase": 53,
+      "amount": 4648
+    },
+    {
+      "id": "18",
+      "name": "Shelagh",
+      "noOfPurchase": 58,
+      "amount": 2336
+    },
+    {
+      "id": "19",
+      "name": "Happy",
+      "noOfPurchase": 2,
+      "amount": 582
+    },
+    {
+      "id": "20",
+      "name": "Ernestine",
+      "noOfPurchase": 45,
+      "amount": 2915
+    },
+    {
+      "id": "21",
+      "name": "Bridgette",
+      "noOfPurchase": 69,
+      "amount": 2050
+    },
+    {
+      "id": "22",
+      "name": "Ellie",
+      "noOfPurchase": 28,
+      "amount": 4112
+    },
+    {
+      "id": "23",
+      "name": "Keely",
+      "noOfPurchase": 53,
+      "amount": 2392
+    },
+    {
+      "id": "24",
+      "name": "Etty",
+      "noOfPurchase": 4,
+      "amount": 1840
+    },
+    {
+      "id": "25",
+      "name": "Lennie",
+      "noOfPurchase": 97,
+      "amount": 2405
+    },
+    {
+      "id": "26",
+      "name": "Victoir",
+      "noOfPurchase": 27,
+      "amount": 4476
+    },
+    {
+      "id": "27",
+      "name": "Bertie",
+      "noOfPurchase": 32,
+      "amount": 630
+    },
+    {
+      "id": "28",
+      "name": "Claire",
+      "noOfPurchase": 67,
+      "amount": 2612
+    },
+    {
+      "id": "29",
+      "name": "Farah",
+      "noOfPurchase": 9,
+      "amount": 389
+    },
+    {
+      "id": "30",
+      "name": "Minda",
+      "noOfPurchase": 17,
+      "amount": 2457
+    },
+    {
+      "id": "31",
+      "name": "Ogdan",
+      "noOfPurchase": 25,
+      "amount": 2904
+    },
+    {
+      "id": "32",
+      "name": "Mollie",
+      "noOfPurchase": 6,
+      "amount": 1207
+    },
+    {
+      "id": "33",
+      "name": "Nettie",
+      "noOfPurchase": 31,
+      "amount": 4318
+    },
+    {
+      "id": "34",
+      "name": "Risa",
+      "noOfPurchase": 61,
+      "amount": 4954
+    },
+    {
+      "id": "35",
+      "name": "Farr",
+      "noOfPurchase": 73,
+      "amount": 3302
+    },
+    {
+      "id": "36",
+      "name": "Budd",
+      "noOfPurchase": 9,
+      "amount": 4722
+    },
+    {
+      "id": "37",
+      "name": "Gustie",
+      "noOfPurchase": 5,
+      "amount": 2746
+    },
+    {
+      "id": "38",
+      "name": "Brucie",
+      "noOfPurchase": 8,
+      "amount": 1110
+    },
+    {
+      "id": "39",
+      "name": "Maighdiln",
+      "noOfPurchase": 66,
+      "amount": 4574
+    },
+    {
+      "id": "40",
+      "name": "Ashbey",
+      "noOfPurchase": 90,
+      "amount": 220
+    },
+    {
+      "id": "41",
+      "name": "Noll",
+      "noOfPurchase": 53,
+      "amount": 1112
+    },
+    {
+      "id": "42",
+      "name": "Tildy",
+      "noOfPurchase": 76,
+      "amount": 986
+    },
+    {
+      "id": "43",
+      "name": "Annamaria",
+      "noOfPurchase": 11,
+      "amount": 1489
+    },
+    {
+      "id": "44",
+      "name": "Howie",
+      "noOfPurchase": 11,
+      "amount": 3550
+    },
+    {
+      "id": "45",
+      "name": "Natalina",
+      "noOfPurchase": 56,
+      "amount": 4873
+    },
+    {
+      "id": "46",
+      "name": "Bernardine",
+      "noOfPurchase": 28,
+      "amount": 62
+    },
+    {
+      "id": "47",
+      "name": "Renard",
+      "noOfPurchase": 32,
+      "amount": 1980
+    },
+    {
+      "id": "48",
+      "name": "Gussy",
+      "noOfPurchase": 84,
+      "amount": 2210
+    },
+    {
+      "id": "49",
+      "name": "Jone",
+      "noOfPurchase": 29,
+      "amount": 482
+    },
+    {
+      "id": "50",
+      "name": "Annmaria",
+      "noOfPurchase": 9,
+      "amount": 4458
+    },
+    {
+      "id": "51",
+      "name": "amarphule",
+      "noOfPurchase": "1212",
+      "amount": "212121"
+    },
+    {
+      "id": "52",
+      "name": "Amardeep Phule ",
+      "noOfPurchase": "323",
+      "amount": "222"
+    }
+  ]
 }
