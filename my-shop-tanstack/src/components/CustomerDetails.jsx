@@ -4,19 +4,17 @@ import { fetchCustomerDetails } from "../api/api";
 
 const CustomerDetails = () => {
   const { id } = useParams();
-  // console.log(" detial id ", id);
   const {
     isPending,
     data: customer,
     error,
   } = useQuery({
-    querykey: ["customers", id],
+    queryKey: ["customers", id],
     queryFn: () => fetchCustomerDetails(id),
   });
 
   if (isPending) return <h2>Loading.....</h2>;
   if (error) return <h2>Data not shown</h2>;
-  // console.log("custer ", customer);
   const { name, noOfPurchase, amount } = customer;
   return (
     <>

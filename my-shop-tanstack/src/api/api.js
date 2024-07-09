@@ -9,7 +9,6 @@ const fetchCustomers = async () => {
 };
 
 const fetchCustomerDetails = async (id) => {
-  // console.log("id ", id);
   const response = await fetch(`http://localhost:3000/customers/${id}`);
   if (!response.ok) {
     throw new Error("Failed to fetch customer");
