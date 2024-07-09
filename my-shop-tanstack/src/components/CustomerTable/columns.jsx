@@ -1,3 +1,7 @@
+import { Link } from "react-router-dom";
+
+import Actions from "./Actions";
+
 export const columns = [
   {
     accessorKey: "id",
@@ -6,6 +10,13 @@ export const columns = [
   {
     accessorKey: "name",
     header: "Customer Name",
+    cell: ({ row: { original } }) => {
+      return (
+        <Link to={`/customers/${original.id}`}>
+          <span>{original.name}</span>
+        </Link>
+      );
+    },
   },
   {
     accessorKey: "noOfPurchase",
@@ -15,8 +26,16 @@ export const columns = [
     accessorKey: "amount",
     header: "Amount",
   },
+
   {
     accessorKey: "actions",
     header: "Actions",
+    cell: ({
+      row: {
+        original: { id },
+      },
+    }) => {
+      return <Actions customerId={id} />;
+    },
   },
 ];

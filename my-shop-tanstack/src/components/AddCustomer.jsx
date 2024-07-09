@@ -1,9 +1,10 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { addCustomer, fetchCustomers } from "../api/api";
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import { addCustomer, editCustomer, fetchCustomers } from "../api/api";
 
 const AddCustomer = () => {
+  const { id } = useParams();
   const navigate = useNavigate();
 
   const [newCustomer, setNewCustomer] = useState({
@@ -22,12 +23,34 @@ const AddCustomer = () => {
     initialData: [],
   });
 
+  useEffect(() => {
+    if (id) {
+      const customerToEdit = customers.find(
+        (customer) => Number(customer.id) === Number(id)
+      );
+      if (customerToEdit) {
+        setNewCustomer({
+          name: customerToEdit.name,
+          noOfPurchase: customerToEdit.noOfPurchase,
+          amount: customerToEdit.amount,
+        });
+      }
+    } else {
+      setNewCustomer({ name: "", noOfPurchase: "", amount: "" });
+    }
+  }, [customers, id]);
+
   const { mutate } = useMutation({
     mutationFn: addCustomer,
     onSuccess: () => {
-      queryClient.invalidateQueries({
-        queryKey: ["customers"],
-      });
+      queryClient.invalidateQueries(["customers"]);
+    },
+  });
+
+  const { mutate: editMutation } = useMutation({
+    mutationFn: editCustomer,
+    onSuccess: () => {
+      queryClient.invalidateQueries(["customers"]);
     },
   });
 
@@ -46,8 +69,11 @@ const AddCustomer = () => {
       alert("Please Enter Number");
       return;
     }
-
-    mutate({ id: (customers.length + 1).toString(), ...newCustomer });
+    if (id) {
+      editMutation({ id: parseInt(id), ...newCustomer });
+    } else {
+      mutate({ id: (customers.length + 1).toString(), ...newCustomer });
+    }
     setNewCustomer({ name: "", noOfPurchase: "", amount: "" });
     navigate("/");
   };
@@ -55,7 +81,9 @@ const AddCustomer = () => {
   return (
     <>
       <section className="w-full items-center justify-center p-4">
-        <h2 className="text-3xl font-semibold py-2">Add Customer</h2>
+        <h2 className="text-3xl font-semibold py-2">
+          {id ? "Edit Customer" : "Add Customer"}
+        </h2>
         <form className="space-y-4" onSubmit={handleSubmitForm}>
           <div className="flex items-center gap-8">
             <label
@@ -112,7 +140,7 @@ const AddCustomer = () => {
           </div>
           <div className="flex justify-center">
             <button className="text-lg tracking-wide bg-blue-600 hover:bg-blue-500 text-white px-3 py-2 rounded-md ">
-              Add Customer
+              {id ? "Edit Customer" : "Add Customer"}
             </button>
           </div>
         </form>

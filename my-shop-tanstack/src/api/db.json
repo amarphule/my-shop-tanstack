@@ -1,100 +1,10 @@
 {
   "customers": [
     {
-      "id": "1",
-      "name": "Candide",
-      "noOfPurchase": 19,
-      "amount": 2796
-    },
-    {
-      "id": "2",
-      "name": "Haze",
-      "noOfPurchase": 89,
-      "amount": 4349
-    },
-    {
-      "id": "3",
-      "name": "William",
-      "noOfPurchase": 44,
-      "amount": 1635
-    },
-    {
-      "id": "4",
-      "name": "Rozella",
-      "noOfPurchase": 94,
-      "amount": 2106
-    },
-    {
-      "id": "5",
-      "name": "Casey",
-      "noOfPurchase": 41,
-      "amount": 2009
-    },
-    {
-      "id": "6",
-      "name": "Marlyn",
-      "noOfPurchase": 0,
-      "amount": 3933
-    },
-    {
-      "id": "7",
-      "name": "Mahala",
-      "noOfPurchase": 69,
-      "amount": 3569
-    },
-    {
-      "id": "8",
-      "name": "Josi",
-      "noOfPurchase": 7,
-      "amount": 2183
-    },
-    {
-      "id": "9",
-      "name": "Paulita",
-      "noOfPurchase": 64,
-      "amount": 472
-    },
-    {
-      "id": "10",
-      "name": "Timmy",
-      "noOfPurchase": 23,
-      "amount": 4837
-    },
-    {
-      "id": "11",
-      "name": "Cornelle",
-      "noOfPurchase": 17,
-      "amount": 680
-    },
-    {
-      "id": "12",
-      "name": "Olivero",
-      "noOfPurchase": 48,
-      "amount": 4643
-    },
-    {
-      "id": "13",
-      "name": "Joleen",
-      "noOfPurchase": 78,
-      "amount": 1717
-    },
-    {
-      "id": "14",
-      "name": "Alan",
-      "noOfPurchase": 33,
-      "amount": 3665
-    },
-    {
-      "id": "15",
       "name": "Angelo",
-      "noOfPurchase": 22,
-      "amount": 1391
-    },
-    {
-      "id": "16",
-      "name": "Brnaba",
-      "noOfPurchase": 46,
-      "amount": 2516
+      "noOfPurchase": "22122",
+      "amount": 1391,
+      "id": "15"
     },
     {
       "id": "17",
@@ -311,6 +221,30 @@
       "name": "Amardeep Phule ",
       "noOfPurchase": "323",
       "amount": "222"
+    },
+    {
+      "id": "53",
+      "name": "John ",
+      "noOfPurchase": "212211",
+      "amount": "212"
+    },
+    {
+      "id": "46",
+      "name": "John ",
+      "noOfPurchase": "12212",
+      "amount": "1111"
+    },
+    {
+      "id": "47",
+      "name": "amarphule",
+      "noOfPurchase": "1221",
+      "amount": "211"
+    },
+    {
+      "id": "41",
+      "name": "121",
+      "noOfPurchase": "121",
+      "amount": "21"
     }
   ]
 }

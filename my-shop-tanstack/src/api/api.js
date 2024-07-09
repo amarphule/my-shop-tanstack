@@ -9,6 +9,7 @@ const fetchCustomers = async () => {
 };
 
 const fetchCustomerDetails = async (id) => {
+  // console.log("id ", id);
   const response = await fetch(`http://localhost:3000/customers/${id}`);
   if (!response.ok) {
     throw new Error("Failed to fetch customer");
@@ -27,4 +28,35 @@ const addCustomer = async (customer) => {
   return response.json();
 };
 
-export { fetchCustomers, fetchCustomerDetails, addCustomer };
+const editCustomer = async (updatedCustomer) => {
+  const { id, ...rest } = updatedCustomer;
+  const response = await fetch(`http://localhost:3000/customers/${id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "Application/json",
+    },
+    body: JSON.stringify(rest),
+  });
+  if (!response.ok) {
+    throw new Error("Failed to edit customer");
+  }
+
+  return response.json();
+};
+
+const deleteCustomer = async (id) => {
+  const response = await fetch(`http://localhost:3000/customers/${id}`, {
+    method: "DELETE",
+  });
+  if (!response.ok) {
+    throw new Error("Failed to delete customer");
+  }
+  return response.json();
+};
+export {
+  fetchCustomers,
+  fetchCustomerDetails,
+  addCustomer,
+  editCustomer,
+  deleteCustomer,
+};
